@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/tesbarcode.iml" filepath="$PROJECT_DIR$/tesbarcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tesbarcode_android.iml" filepath="$PROJECT_DIR$/tesbarcode_android.iml" />
+    </modules>
+  </component>
+</project>

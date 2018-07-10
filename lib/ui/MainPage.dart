@@ -126,7 +126,8 @@ class _MainPage extends State<MainPage>{
           children: <Widget>[
             
             logo1, 
-            SizedBox(height: 48.0), 
+            SizedBox(height: 48.0),
+            
             ipAddressTv, 
             hasil, 
             scanBtn, 

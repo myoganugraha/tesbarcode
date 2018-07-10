@@ -59,7 +59,7 @@ class _MainPage extends State<MainPage>{
     );**/
 
     final scanBtn = Padding(
-    padding: EdgeInsets.symmetric(vertical:20.0),
+    padding: EdgeInsets.symmetric(vertical:4.0),
       child: Material(
         borderRadius: BorderRadius.circular(30.0),
         shadowColor: Colors.lightBlueAccent.shade100,
@@ -67,7 +67,7 @@ class _MainPage extends State<MainPage>{
         child: MaterialButton(
           minWidth: 200.0,
           height: 42.0,
-           onPressed: scan, child: new Text("Scan", style: TextStyle(color: Colors.white)),
+           onPressed: scan, child: new Text("Scan Barcode", style: TextStyle(color: Colors.white)),
           color: Colors.lightBlueAccent,
         ),
       ),
@@ -79,7 +79,7 @@ class _MainPage extends State<MainPage>{
     );
 
     final deviceInfoBtn = Padding(
-      padding: EdgeInsets.symmetric(vertical:8.0),
+      padding: EdgeInsets.symmetric(vertical:4.0),
       child: Material(
         borderRadius: BorderRadius.circular(30.0),
         shadowColor: Colors.lightBlueAccent.shade100,
@@ -124,7 +124,8 @@ class _MainPage extends State<MainPage>{
           shrinkWrap: true,
           padding: EdgeInsets.only(left: 24.0, right: 24.0),
           children: <Widget>[
-            welcome, scanBtn, hasil, deviceInfoBtn, ipRefreshBtn,  ipAddressTv
+            logo1, 
+            SizedBox(height: 48.0), hasil, ipAddressTv, scanBtn, deviceInfoBtn, ipRefreshBtn
           ],
         ),
       );

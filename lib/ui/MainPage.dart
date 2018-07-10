@@ -103,7 +103,7 @@ class _MainPage extends State<MainPage>{
 
     final cekLokasiTv = Padding(
       padding: EdgeInsets.symmetric(vertical:4.0),
-      child: new Text(_ipAddress.trim().toString() == "203.210.86.14" ? 'Anda sedang berada di GITS' : 'Anda berada di luar lingkungan GITS')
+      child: new Text(_ipAddress.trim().toString() == "203.210.86.14" ? 'Anda sedang berada di GITS' : 'Anda sedang tidak dalam jaringan GITS')
     );
 
     final ipRefreshBtn = Padding(

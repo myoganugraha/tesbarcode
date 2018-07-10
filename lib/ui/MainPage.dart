@@ -127,8 +127,8 @@ class _MainPage extends State<MainPage>{
             
             logo1, 
             SizedBox(height: 48.0), 
-            hasil, 
             ipAddressTv, 
+            hasil, 
             scanBtn, 
             deviceInfoBtn, 
             ipRefreshBtn

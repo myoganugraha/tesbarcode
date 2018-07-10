@@ -97,8 +97,13 @@ class _MainPage extends State<MainPage>{
     );  
 
     final ipAddressTv = Padding(
-      padding: EdgeInsets.symmetric(vertical:8.0),
+      padding: EdgeInsets.symmetric(vertical:4.0),
       child: new Text("Public IP : $_ipAddress" ),
+    );
+
+    final cekLokasiTv = Padding(
+      padding: EdgeInsets.symmetric(vertical:4.0),
+      child: new Text(_ipAddress.trim().toString() == "203.210.86.14" ? 'Anda sedang berada di GITS' : 'Anda berada di luar lingkungan GITS')
     );
 
     final ipRefreshBtn = Padding(
@@ -127,8 +132,9 @@ class _MainPage extends State<MainPage>{
             
             logo1, 
             SizedBox(height: 48.0),
-            
+
             ipAddressTv, 
+            cekLokasiTv,
             hasil, 
             scanBtn, 
             deviceInfoBtn, 

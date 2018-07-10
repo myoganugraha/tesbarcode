@@ -16,7 +16,7 @@ class MainPage extends StatefulWidget {
   }
 
 class _MainPage extends State<MainPage>{
-  String barcode = "";
+  String barcode = "Unknown";
   var _ipAddress = 'Unknown';
   //String ipAddress = "";
 
@@ -59,7 +59,7 @@ class _MainPage extends State<MainPage>{
     );**/
 
     final scanBtn = Padding(
-    padding: EdgeInsets.symmetric(vertical:4.0),
+    padding: EdgeInsets.only(top: 40.0, bottom: 4.0,),
       child: Material(
         borderRadius: BorderRadius.circular(30.0),
         shadowColor: Colors.lightBlueAccent.shade100,
@@ -119,13 +119,19 @@ class _MainPage extends State<MainPage>{
       ),
     );  
 
-    final body = Center( 
+    final body = Container( 
       child: ListView(
           shrinkWrap: true,
-          padding: EdgeInsets.only(left: 24.0, right: 24.0),
+          padding: EdgeInsets.only(left: 24.0, top: 100.0, right: 24.0),
           children: <Widget>[
+            
             logo1, 
-            SizedBox(height: 48.0), hasil, ipAddressTv, scanBtn, deviceInfoBtn, ipRefreshBtn
+            SizedBox(height: 48.0), 
+            ipAddressTv, 
+            hasil, 
+            scanBtn, 
+            deviceInfoBtn, 
+            ipRefreshBtn
           ],
         ),
       );
